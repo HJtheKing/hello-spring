@@ -5,6 +5,8 @@ public class Member {
     private Long id;
     private String name;
 
+    // alt + insert : generate getter setter 자동 작성 가능
+
     public Long getId() {
         return id;
     }
