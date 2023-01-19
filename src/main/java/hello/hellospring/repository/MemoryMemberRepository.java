@@ -1,9 +1,13 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+
+// 해당 클래스를 단순 자바 클래스가 아닌 스프링 컨테이너에서 불러들이고 작동시키기 위해 @Repository, @Service 등의 에너테이션 필요
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
